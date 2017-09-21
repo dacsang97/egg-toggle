@@ -1,14 +1,23 @@
 <template>
-  <div id="app">
-    <div id="egg-toggle" ref="egg" @click="onClicked"></div>
+  <div>
+    <a href="https://github.com/dacsang97/egg-toggle">
+      <octocat></octocat>
+    </a>
+    <div id="app">
+      <div id="egg-toggle" ref="egg" @click="onClicked"></div>
+    </div>
   </div>
 </template>
 
 <script>
+import Octocat from './Octocat.vue'
 import eggFlip from './assets/egg_flip.json'
 
 export default {
   name: 'app',
+  components: {
+    Octocat
+  },
   data () {
     return {
       msg: 'Welcome to Your Vue.js App',
